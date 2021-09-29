@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NoteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jot.Data\Jot.Data.csproj">
+      <Project>{ff6ba5c8-a6b2-4767-b03c-a1daf213337b}</Project>
+      <Name>Jot.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jot.Models\Jot.Models.csproj">
+      <Project>{61302148-0af0-4578-a2fc-61ab6dcac9a2}</Project>
+      <Name>Jot.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
